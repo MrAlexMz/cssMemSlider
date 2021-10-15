@@ -26,7 +26,7 @@ body {
 .memes img {
   height: 800px;
   width: 560px;
-  transition: all 0.15s ease;
+  transition: all 0.14s ease;
 }
 
 .slider input {
@@ -45,7 +45,7 @@ body {
   border-radius: 50%;
   border: solid #fff 3px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.14s ease;
   margin: 5px;
 }
 
