@@ -38,7 +38,7 @@ input {
   justify-content: center;
 }
 
-.slider label {
+label {
   height: 13px;
   width: 13px;
   border-radius: 50%;
@@ -73,27 +73,27 @@ label:hover {
   margin-left: -300%;
 }
 
-#s1:checked ~ .lover-wrapper .text .p1 {
-  margin-left: 0;
+#s1:checked ~ .lower-wrapper .text .p1 {
+  margin-left: 4%;
 }
 
-#s2:checked ~ .lover-wrapper .text .p2,
+#s2:checked ~ .lower-wrapper .text .p2,
 .p1 {
   margin-left: -100%;
 }
 
-#s3:checked ~ .lover-wrapper .text .p3 {
+#s3:checked ~ .lower-wrapper .text .p3 {
   margin-left: -260%;
 }
 
-#s4:checked ~ .lover-wrapper .text .p4 {
+#s4:checked ~ .lower-wrapper .text .p4 {
   margin-left: -430%;
 }
 
-#s1:checked ~ .lover-wrapper .controls .dot1,
-#s2:checked ~ .lover-wrapper .controls .dot2,
-#s3:checked ~ .lover-wrapper .controls .dot3,
-#s4:checked ~ .lover-wrapper .controls .dot4 {
+#s1:checked ~ .lower-wrapper .controls .dot1,
+#s2:checked ~ .lower-wrapper .controls .dot2,
+#s3:checked ~ .lower-wrapper .controls .dot3,
+#s4:checked ~ .lower-wrapper .controls .dot4 {
   background-color: #25282a;
 }
 
@@ -104,7 +104,7 @@ p {
   transition: all 0.14s ease;
 }
 
-.lover-wrapper {
+.lower-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -116,4 +116,20 @@ p {
   flex-direction: row;
   width: 30%;
   overflow: hidden;
+}
+
+@media screen and (max-width: 510px) {
+  .lower-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .text {
+    width: 40%;
+  }
 }
