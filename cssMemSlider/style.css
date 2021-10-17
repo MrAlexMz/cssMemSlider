@@ -14,7 +14,7 @@ body {
 
 .slider {
   position: relative;
-  width: 30%;
+  width: 25%;
   overflow: hidden;
   margin: 2%;
 }
@@ -80,15 +80,15 @@ label:hover > div {
 
 #s2:checked ~ .lower-wrapper .text .p2,
 .p1 {
-  margin-left: -100%;
+  margin-left: -90%;
 }
 
 #s3:checked ~ .lower-wrapper .text .p3 {
-  margin-left: -260%;
+  margin-left: -250%;
 }
 
 #s4:checked ~ .lower-wrapper .text .p4 {
-  margin-left: -430%;
+  margin-left: -420%;
 }
 
 #s1:checked ~ .lower-wrapper .controls .dot1,
@@ -115,7 +115,7 @@ p {
 .text {
   display: flex;
   flex-direction: row;
-  width: 35%;
+  width: 45%;
   overflow: hidden;
 }
 
