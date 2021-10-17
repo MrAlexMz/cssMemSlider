@@ -115,7 +115,7 @@ p {
 .text {
   display: flex;
   flex-direction: row;
-  width: 45%;
+  width: 36%;
   overflow: hidden;
 }
 
