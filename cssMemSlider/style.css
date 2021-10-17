@@ -14,8 +14,9 @@ body {
 
 .slider {
   position: relative;
-  width: 560px;
+  width: 30%;
   overflow: hidden;
+  margin: 2%;
 }
 
 .memes {
@@ -38,7 +39,7 @@ input {
   justify-content: center;
 }
 
-label {
+label div {
   height: 13px;
   width: 13px;
   border-radius: 50%;
@@ -52,7 +53,7 @@ label.dot4 {
   margin-right: 0;
 }
 
-label:hover {
+label:hover > div {
   border-color: #fff;
   background-color: #fff;
 }
@@ -74,7 +75,7 @@ label:hover {
 }
 
 #s1:checked ~ .lower-wrapper .text .p1 {
-  margin-left: 4%;
+  margin-left: 2%;
 }
 
 #s2:checked ~ .lower-wrapper .text .p2,
@@ -98,7 +99,7 @@ label:hover {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   margin-right: 110%;
   transition: all 0.14s ease;
@@ -114,11 +115,48 @@ p {
 .text {
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 35%;
   overflow: hidden;
 }
 
+@media screen and (max-width: 1500px) {
+  .text {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .slider {
+    width: 55%;
+  }
+
+  p {
+    margin-right: 150%;
+  }
+
+  #s1:checked ~ .lower-wrapper .text .p1 {
+    margin-left: 2%;
+  }
+
+  #s2:checked ~ .lower-wrapper .text .p2,
+  .p1 {
+    margin-left: -110%;
+  }
+
+  #s3:checked ~ .lower-wrapper .text .p3 {
+    margin-left: -320%;
+  }
+
+  #s4:checked ~ .lower-wrapper .text .p4 {
+    margin-left: -520%;
+  }
+}
+
 @media screen and (max-width: 510px) {
+  .slider {
+    width: 80%;
+  }
+
   .lower-wrapper {
     flex-direction: column-reverse;
   }
@@ -126,10 +164,21 @@ p {
   p {
     font-size: 16px;
   }
-}
 
-@media screen and (max-width: 510px) {
-  .text {
-    width: 40%;
+  #s1:checked ~ .lower-wrapper .text .p1 {
+    margin-left: 2%;
+  }
+
+  #s2:checked ~ .lower-wrapper .text .p2,
+  .p1 {
+    margin-left: -105%;
+  }
+
+  #s3:checked ~ .lower-wrapper .text .p3 {
+    margin-left: -285%;
+  }
+
+  #s4:checked ~ .lower-wrapper .text .p4 {
+    margin-left: -475%;
   }
 }
